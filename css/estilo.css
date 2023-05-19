@@ -7,12 +7,17 @@ html {
     color: white;
     background-color: #000000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     width: 74%;
     background-color: #282828;
     margin: 0px auto;
+}
+
+button {
+    cursor: pointer;
 }
 
 
@@ -210,7 +215,6 @@ p {
 
 .capacitaciones button:hover {
     opacity: 1;
-    cursor: pointer;
 }
 
 .capacitaciones i {
@@ -269,13 +273,14 @@ p {
 
 .testimonios .testimonio {
     display: flex;
-    width: 28%;
+    width: 25%;
     line-height: 2.5rem;
     flex-direction: column;
     border: 1px solid #1c1c1c;
     background: linear-gradient(#424141, #1c1c1c), transparent;
     padding: 1.5rem;
     border-radius: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .calificacion {
@@ -409,7 +414,6 @@ form button {
 
 form button:hover {
     opacity: 1;
-    cursor: pointer;
 }
 
 form button i {
@@ -432,9 +436,31 @@ footer img {
 }
 
 
+@media(max-width:1600px) {
+    .contenidoContacto {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .contenidoContacto .informacionContacto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-@media(max-width:900px) {
+    form {
+        margin: 2rem 0;
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media(max-width:1200px) {
+    body {
+        width: 90%;
+    }
+
     header nav {
         display: none;
     }
@@ -508,23 +534,5 @@ footer img {
     .testimonios .testimonio {
         width: auto;
         margin: 1rem 0;
-    }
-
-    .contenidoContacto {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contenidoContacto .informacionContacto {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    form {
-        margin: 2rem 0;
-        width: 100%;
-        height: 400px;
     }
 }
