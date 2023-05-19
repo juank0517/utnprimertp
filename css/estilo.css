@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: white;
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 74%;
+    background-color: #282828;
+    margin: 0px auto;
+}
+
+
+/* HEADER */
+header, main, footer {
+    width: 80%;
+    margin: 0px auto;
+}
+
+header {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 40px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0px;
+    margin: 0px 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+header nav a:hover {
+    border-bottom-style: dotted;
+}
+
+header button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.2rem;
+    background-color: #f60838;
+    color: white;
+}
+
+
+
+/* MAIN */
+section {
+    padding: 4rem 0;
+    border-bottom: 1px solid black;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+}
+
+.ladoIzquierdo, .ladoDerecho {
+    width: 50%;
+}
+
+.textoDestacado {
+    color: #f60838;
+}
+
+.tituloPrincipal {
+    font-size: 4rem;
+    margin: 0.5rem 0;
+}
+
+.hero p {
+    margin: 2rem 0;
+}
+
+.ladoDerecho {
+    display: flex;
+    justify-content: center;
+}
+
+.contenidoImagenDerecha {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.miFoto {
+    width: 350px;
+    position: absolute;
+}
+
+.cuadroFondo {
+    height: 350px;
+    width: 350px;
+    background-color: black;
+    position: absolute;
+    top: 165px;
+    border-radius: 0.4rem;
+    opacity: 0.3;
+    box-shadow: -5px 1px 30px -8px rgba(0,0,0,0.75);
+}
+
+.redes {
+    margin: 2rem 0;
+}
+
+.redes i {
+    padding: 1rem;
+    margin-right: 0.7rem;
+    border: 1px solid #1c1c1c;
+    border-radius: 0.5rem;
+    background-color: #1c1c1c;
+}
+
+.informacionAdicionalHero {
+    display: flex;
+    margin: 4rem 0;
+    line-height: 2rem;
+}
+
+.informacionAdicionalHero .columnaInfo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5rem;
+    text-transform: uppercase;
+}
+
+.informacionAdicionalHero .columnaInfo h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+
+
+.contenidoConocimientos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenidoConocimientos .conozco {
+    width: 28%;
+    display: flex;
+    line-height: 4rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.7rem;
+    flex-direction: column;
+    border: 1px solid #1c1c1c;
+    background: linear-gradient(#424141, #1c1c1c), transparent;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.contenidoConocimientos .conozco i {
+    color: #f60838;
+    font-size: 2rem;
+}
+
+.capacitaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contenidoCapacitaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.capacitaciones button {
+    margin: 2rem 0;
+    padding: 1rem 4rem;
+    background-color: #1c1c1c;
+    color: white;
+    border: 1px solid #1c1c1c;
+    border-radius: 0.9rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.capacitaciones button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.capacitaciones i {
+    font-size: 2rem;
+}
+
+.contenidoCapacitaciones img {
+    width: 28%;
+    margin-right: 0.2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+
+.resumen {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.2rem 0;
+}
+
+.resumen .experienciaLaboral, .resumen .resumenConocimientos {
+    flex-basis: 50%;
+}
+
+.resumen .tiempo {
+    display: flex;
+    width: 85%;
+    line-height: 2.5rem;
+    flex-direction: column;
+    border: 1px solid #1c1c1c;
+    background: linear-gradient(#424141, #1c1c1c), transparent;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.resumen .linea {
+    position: relative;
+    height: 50px;
+    width: 5px;
+    background-color: #1c1c1c;
+    left: 2rem;
+    top: 0;
+}
+
+.resumen .fecha {
+    margin-bottom: 1.2rem;
+}
+
+
+
+.testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonios .testimonio {
+    display: flex;
+    width: 28%;
+    line-height: 2.5rem;
+    flex-direction: column;
+    border: 1px solid #1c1c1c;
+    background: linear-gradient(#424141, #1c1c1c), transparent;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.testimonios i {
+    color: #f60838;
+    font-size: 1.5rem;
+}
